@@ -1,0 +1,24 @@
+<div style="margin-top: 30px;">
+  <div class="col-xs-12 col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8" ng-repeat="news in main.results">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <i>Mashable</i> - <span>#Social-Media</span><span>#Web</span>
+      </div>
+      <div class="panel-image">
+        <img src="/datas/lorem.jpg" class="panel-image-preview" />
+        <!--<label for="toggle-1"></label>-->
+        <h4>Summary</h4>
+        <a href="" ng-click="news.show = !news.show">{{news.summary}}</a>
+      </div>
+      <div class="panel-body hide" style="padding: 0;">
+        <p ng-repeat="paragraph in news.content">{{paragraph}}</p>
+      </div>
+      <div class="panel-footer clearfix">
+        <a href="#download" class="btn pull-left">Save</span></a>
+        <a href="#facebook" class="btn btn-sm btn-hover pull-left" >Shr</span></a>
+        <a class="btn comsys btn-sm btn-hover pull-left" >Cmt</span></a>
+        <a href="#share" class="btn btn-sm btn-hover pull-left" >Like</a>
+      </div>
+    </div>
+  </div>
+</div>
